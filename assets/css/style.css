@@ -1,0 +1,14 @@
+#JHP {
+    text-align: center;
+}
+
+#Profile-Photo {
+    justify-content: left;
+    max-width: 15%;
+    max-height: 15%;
+}
+
+p {
+    display:block;
+
+}
