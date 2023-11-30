@@ -1,6 +1,6 @@
 * {
-    background-color: salmon;
-    color: darkblue;
+     /* background-color: salmon;
+    color: darkblue; */
 }
 
 p {
@@ -10,6 +10,7 @@ p {
 footer {
     text-align: center;
 }
+
 
 #JHP {
     text-align: left;
@@ -24,12 +25,27 @@ footer {
 }
 
 .deployed-app {
-
+    display: inline;
 }
 
-/* Not adjusting size of img ??*/
-#Horiseon-Thumbnail {
-    max-width: 10%;
-    max-height: 10%;
-    border-radius: 10px;
+/* media query stays at bottom */
+@media screen and (max-width:1440px) and (min-width:769px) {
+    * {
+        background-color: salmon;
+        color: darkblue
+    }
+}
+
+@media screen and (max-width:768px) {
+   * {
+        background-color: grey;
+        color: black;
+    }
+}
+
+@media screen and (max-width:320px) {
+    * {
+        background-color: black;
+        color:white;
+    }
 }
