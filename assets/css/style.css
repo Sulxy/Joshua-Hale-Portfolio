@@ -1,14 +1,35 @@
-#JHP {
-    text-align: center;
-}
-
-#Profile-Photo {
-    justify-content: left;
-    max-width: 15%;
-    max-height: 15%;
+* {
+    background-color: salmon;
+    color: darkblue;
 }
 
 p {
     display:block;
+}
 
+footer {
+    text-align: center;
+}
+
+#JHP {
+    text-align: left;
+}
+
+#Profile-Photo {
+/* Round the photo */
+    justify-content: left;
+    max-width: 15%;
+    max-height: 15%;
+    border-radius: 5%;
+}
+
+.deployed-app {
+
+}
+
+/* Not adjusting size of img ??*/
+#Horiseon-Thumbnail {
+    max-width: 10%;
+    max-height: 10%;
+    border-radius: 10px;
 }
