@@ -1,6 +1,13 @@
+/* Remove display:block from universal selector. 
+    Within <body> add container to header, main, footer. */
+
 * {
-     /* background-color: salmon;
-    color: darkblue; */
+    /* Should probably add something here */ 
+    /* box-sizing:border-box */
+}
+
+header {
+  font-size: 150%;
 }
 
 p {
@@ -9,8 +16,31 @@ p {
 
 footer {
     text-align: center;
+    font-size: 125%;
 }
 
+.flexboxA {
+    display: inline-flex;
+}
+
+.flexboxA #flexboxAchild {
+    margin-left: 2%;
+    margin-right: 2%;
+    list-style-type: none;
+    padding-left:
+}
+
+.deployed-app-img-container {
+    display:inline-block;
+    justify-content: left;
+    height: 10%;
+    width: 10%;
+}
+
+.deployed-app-img-container img {
+    max-height: 33px;
+    max-width: 89px;
+}
 
 #JHP {
     text-align: left;
@@ -19,17 +49,17 @@ footer {
 #Profile-Photo {
 /* Round the photo */
     justify-content: left;
-    max-width: 15%;
-    max-height: 15%;
+    max-width: 40%;
+    max-height: 40%;
     border-radius: 5%;
 }
 
-.deployed-app {
-    display: inline;
+.Contact-Me .Contact-Me-Child {
+    list-style-type: none;
 }
 
 /* media query stays at bottom */
-@media screen and (max-width:1440px) and (min-width:769px) {
+@media screen and (max-width:2560px) and (min-width:769px) {
     * {
         background-color: salmon;
         color: darkblue
@@ -48,4 +78,13 @@ footer {
         background-color: black;
         color:white;
     }
-}
+    Body {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #Profile-Photo {
+        min-height: 400px;
+        min-width: 300px;
+    }
+}   
