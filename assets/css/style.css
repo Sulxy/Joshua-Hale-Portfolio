@@ -1,18 +1,16 @@
 * {
-    /* Should probably add something here */ 
+    /* Sets box side, wraps/unwraps whole page as screen-size growns or shrinks, and removes bullet points across the page.*/ 
     box-sizing:border-box;
     list-style-type: none;
     flex-wrap: wrap;
 }
 
+/* Sets default font size for all headers*/
 header {
   font-size: 125%;
 }
 
-p {
-   /* display:block; */
-}
-
+/* Sets default font size for footer, and aligns footer text to center. */
 footer {
     text-align: center;
     font-size: 125%;
@@ -29,7 +27,7 @@ footer {
     width: 100%;
   }
 
-/* flex box for nav menu */
+/* flexbox for nav menu inside main header */
 .main-header-container nav {
     width: 100%;
     display: flex;
@@ -38,7 +36,7 @@ footer {
     
 }
 
-/* makes nav links in a row. */
+/* flexbox for line items inside of .main-header-container. Makes items in a row. */
 .main-header-container nav li {
     display: inline-block;
 
@@ -49,19 +47,18 @@ footer {
     display: flex;
 }
 
+/* flexbox container for ALL <section> within the .main-container element. */
 .main-container section{
     display: flex;
     flex-direction: column;
 }
 
-.main-container h1  {
+/* aligns all <h1> and <p> to center within the .main-container. */
+.main-container h1, p  {
     text-align: center;
 }
 
-.main-container h1 p {
-    text-align: center;
-}
-
+ /* sets config for <article> -> <div> within the .main-container. */
 .main-container article div {
     display: block;
     margin-left: auto;
@@ -69,19 +66,21 @@ footer {
     width: 42%;
 }
 
+/* aligns all text to center for the bottom flexbox within the .main-container. */
 .main-container .horizontal-bottom-box {
     text-align: center;
 }
 
+/* Sets config for #Profile-Photo. Couldn't figure out how to center image as screen size shrinks. */
 #Profile-Photo {
     flex-wrap:wrap;
-    
     justify-content: left;
     max-width: 30%;
     max-height: 30%;
     border-radius: 5%;
 }
 
+/* All @media code sets conditions for background color and font color as the screen-size changes. */
 @media screen and (max-width:2560px) and (min-width:769px) {
     * {
         background-color: salmon;
