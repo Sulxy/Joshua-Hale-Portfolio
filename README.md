@@ -16,8 +16,7 @@ Working navigation links, clickable image of completed project takes you to the 
 
 ## Link to Website
 
-[Add URL here
-](https://sulxy.github.io/Joshua-Hale-Portfolio/)
+https://sulxy.github.io/Joshua-Hale-Portfolio/)
 
 ## Credits
 
